@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.prize {
+    display: flex;
+    height: 150px;
+    width: 23%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    background-color: burlywood;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prize:nth-child(4n) {
+    margin-right: 0;
+}
+
+.button__block {
+    display: flex;
+    justify-content: center;
+}
+
+.prize__result {
+    font-weight: 500;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.active {
+    background-color: chocolate;
+}
