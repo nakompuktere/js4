@@ -14,7 +14,7 @@ function get_numbers() {
         prizes[i].classList.remove("active")
     }
 
-    random_number = Math.round(random_number)
+    random_number = Math.floor(random_number)
 
     prizes[random_number-1].classList.add("active")
 
@@ -25,7 +25,6 @@ function get_numbers() {
     console.log(all_prizes);
     result.innerHTML = all_prizes[random_number-1];
 }
-
 
 
 button.addEventListener("click", get_numbers);
